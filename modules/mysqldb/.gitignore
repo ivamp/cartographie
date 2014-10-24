@@ -1,0 +1,27 @@
+*.pyc
+*.pyo
+*.o
+*.so
+*.pyd
+*.gz
+*.zip
+*.egg
+*.egg-info/
+.tox/
+build/
+dist/
+# *.[oa]
+# *~
+*.pyc
+*.pyo
+*~
+
+.cvsignore
+.project
+.pydevproject
+
+#profiling/outputs
+*.log
+regress.py
+test.py
+PKG-INFO
