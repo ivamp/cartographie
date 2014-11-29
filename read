@@ -1,0 +1,16 @@
+script python-nmap OS
+
+# il faut decomprésser le fichier python-nmap-0.3.4.tar.gz
+
+tar xvzf python-nmap-0.3.4.tar.gz
+cd python python-nmap-0.3.4
+python setup.py install
+
+# Pour faire le scan il faut etre root
+
+# Pour le moment je l'ai fait avec une seule adresse ip.
+
+# Je récupère l'os et la version, si il y a d'autres choses à récuperer, je le modifierais.
+
+
+

@@ -1,0 +1,48 @@
+#col_stations {
+
+position:relative;
+float:left;
+width: 28%;
+padding-left: 15px;
+padding-right:5px;
+margin-right: 5px;
+border: black 1px solid;
+display: inline-block;
+
+}
+
+#col_serveurs {
+
+position:relative;
+float:left;
+width: 28%;
+padding-left: 15px;
+padding-right:5px;
+margin-right: 5px;
+margin-bottom: 5px;
+border: black 1px solid;
+display: inline-block;
+
+}
+
+#col_routeurs {
+
+position:relative;
+width: 28%;
+padding-left: 15px;
+padding-right:5px;
+margin-right: 5px;
+border: black 1px solid;
+display: inline-block;
+
+}
+
+footer {
+position: absolute;
+margin-top: 5px;
+border-top:  1px solid black;
+text-align:center;
+font-style:italic;
+bottom:0px;
+width:99%;
+}
