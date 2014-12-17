@@ -5,23 +5,28 @@ apt-get update
 
 echo "Faut-il installer apache2? y/n "
 read response1
-if [response1==y]
+if [ "$response1" == 'y' ];
+then
 	apt-get install -y apache2
 else
 	""
+fi
 echo "Faut-il installer mysql-server ? y/n"
 read response2
-if [response2==y]
+if [ "$response2" == 'y' ];
+then
 	apt-get install -y mysql-server
 else
 	""
+fi
 echo "Faut-il installer phpmyadmin ? y/n"
 read response3
-if [response3==y]
+if [ "$response3" == 'y' ]
+then
 	apt-get install -y phpmyadmin
 else
 	""
-
+fi
 apt-get install -y nmap
 
 apt-get install -y libmysqlclient-dev
@@ -31,7 +36,8 @@ read name
 echo "saisir mot de passe base de donnee"
 read -s mdp
 
-mysql -u $name -p $mdp < database.sql
+mysql --verbose --batch --host=localhost --user="$name" --password="$mdp" --execute="CREATE DATABASE projet;"
+mysql --user="$name" --password="$mdp" --use="projet" < database.sql
 
 cd scripts/
 ./ListeActive.sh
